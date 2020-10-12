@@ -6,7 +6,6 @@ import com.darin.blog.dto.SearchBlogParam;
 import com.darin.blog.entity.Blog;
 import com.darin.blog.entity.Type;
 import com.darin.blog.service.BlogService;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -60,9 +59,13 @@ public class BlogServiceImpl implements BlogService {
     @Transactional
     @Override
     public Blog saveBlog(Blog blog) {
-        blog.setCreateTime(new Date());
-        blog.setUpdateTime(new Date());
-        blog.setViews(0);
+        if (blog.getId() == null) {
+            blog.setCreateTime(new Date());
+            blog.setUpdateTime(new Date());
+            blog.setViews(0);
+        } else {
+            blog.setUpdateTime(new Date());
+        }
         return blogRepository.save(blog);
     }
 
@@ -73,7 +76,6 @@ public class BlogServiceImpl implements BlogService {
         if (b == null){
             throw new NotFoundException("博客类型不存在");
         }
-
 //        BeanUtils.copyProperties(blog,b);
         blog.setUpdateTime(new Date());
         blog.setCreateTime(b.getCreateTime());

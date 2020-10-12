@@ -1,4 +1,4 @@
-package com.darin.blog.controller;
+package com.darin.blog.controller.admin;
 
 import com.darin.blog.common.CommonResult;
 import com.darin.blog.dto.TagAndTypeParam;

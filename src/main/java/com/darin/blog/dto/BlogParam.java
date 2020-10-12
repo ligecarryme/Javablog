@@ -9,6 +9,8 @@ public class BlogParam {
     private String tagsid;
     private String firstPicture;
     private String content;
+    private String description;
+    private String username;
     private boolean recommend;
     private boolean shareStatement;
     private boolean appreciation;
@@ -113,4 +115,19 @@ public class BlogParam {
         this.published = published;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
 }

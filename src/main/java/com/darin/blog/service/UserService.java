@@ -4,4 +4,5 @@ import com.darin.blog.entity.User;
 
 public interface UserService {
     User checkUser(String username, String password);
+    User getUser(String username);
 }

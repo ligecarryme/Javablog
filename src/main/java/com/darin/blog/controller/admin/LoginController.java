@@ -1,4 +1,4 @@
-package com.darin.blog.controller;
+package com.darin.blog.controller.admin;
 
 import com.darin.blog.common.CommonResult;
 import com.darin.blog.dto.AdminLoginParam;
@@ -52,6 +52,6 @@ public class LoginController {
     @ResponseBody
     public CommonResult<Object> logout(HttpSession session){
 //        session.removeAttribute("user");
-        return CommonResult.success("","注销成功");
+        return CommonResult.success(null,"注销成功");
     }
 }

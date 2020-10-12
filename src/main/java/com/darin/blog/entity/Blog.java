@@ -22,6 +22,7 @@ public class Blog {
     private String firstPicture;
     private String flag; //标签
     private Integer views;
+    private String description;
     private boolean appreciation;
     private boolean shareStatement;
     private boolean commentabled;
@@ -201,6 +202,15 @@ public class Blog {
         TagIds = tagIds;
     }
 
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     public void init(){
         this.TagIds = tagsToIds(this.getTags());
     }
@@ -232,6 +242,7 @@ public class Blog {
                 ", firstPicture='" + firstPicture + '\'' +
                 ", flag='" + flag + '\'' +
                 ", views=" + views +
+                ", description='" + description + '\'' +
                 ", appreciation=" + appreciation +
                 ", shareStatement=" + shareStatement +
                 ", commentabled=" + commentabled +
@@ -241,4 +252,5 @@ public class Blog {
                 ", updateTime=" + updateTime +
                 '}';
     }
+
 }

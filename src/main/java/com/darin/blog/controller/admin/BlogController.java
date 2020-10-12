@@ -1,4 +1,4 @@
-package com.darin.blog.controller;
+package com.darin.blog.controller.admin;
 
 import com.darin.blog.common.CommonResult;
 import com.darin.blog.dto.BlogParam;
@@ -10,6 +10,7 @@ import com.darin.blog.entity.User;
 import com.darin.blog.service.BlogService;
 import com.darin.blog.service.TagService;
 import com.darin.blog.service.TypeService;
+import com.darin.blog.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +36,8 @@ public class BlogController {
     private TypeService typeService;
     @Autowired
     private TagService tagService;
+    @Autowired
+    private UserService userService;
 
     @ApiOperation("获取博客列表")
     @GetMapping("/bloglist")
@@ -73,11 +76,10 @@ public class BlogController {
     @ApiOperation("新增博客")
     @PostMapping("/addblog")
     @ResponseBody
-    public CommonResult<Object> post(HttpSession session, @RequestBody BlogParam blogParam){
+    public CommonResult<Object> post(@RequestBody BlogParam blogParam){
         Blog blog = new Blog();
-        blog.setUser((User) session.getAttribute("user"));
-//        System.out.println(session.getAttribute("user"));
 
+        blog.setUser(userService.getUser(blogParam.getUsername()));
         blog.setId(blogParam.getId());
         blog.setFlag(blogParam.getFlag());
         blog.setTitle(blogParam.getTitle());
@@ -90,7 +92,7 @@ public class BlogController {
         blog.setAppreciation(blogParam.isAppreciation());
         blog.setCommentabled(blogParam.isCommentabled());
         blog.setPublished(blogParam.isPublished());
-
+        blog.setDescription(blogParam.getDescription());
 //        System.out.println(blog);
 
         if (blog.getId() == 0){
