@@ -16,6 +16,8 @@ public interface TypeService {
 
     List<Type> listType();
 
+    List<Type> listTypeTop(Integer integer);
+
     Type updateType(Long id, Type type);
 
     Type getTypeByname(String name);
