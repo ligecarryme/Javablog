@@ -20,9 +20,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 @Controller
 @Api(value = "indexController")
@@ -45,7 +43,8 @@ public class IndexController {
         Page<Blog> page = blogService.listBlog(pageable);
         List<Type> typeList = typeService.listTypeTop(4);
         List<Tag> tagList = tagService.listTagTop(8);
-        return CommonResult.success(ImmutableMap.of("blog",page.getContent(),"type",typeList,"tag",tagList) ,"获取成功");
+        List<Blog> blogList = blogService.listBlogTop(3);
+        return CommonResult.success(ImmutableMap.of("blog",page.getContent(),"topBlog",blogList,"type",typeList,"tag",tagList) ,"获取成功");
     }
 
 }

@@ -38,8 +38,9 @@ public class LogAspect {
     }
 
     @AfterReturning(returning = "result", pointcut = "log()")
-    public void doAfterReturn(Object result){
-        logger.info("Result : {}", result.toString());
+    public void doAfterReturn(Object result) throws Throwable{
+        //logger.info("Result : {}", result.toString());
+        logger.info("Result");
     }
 
     private class RequestLog{
