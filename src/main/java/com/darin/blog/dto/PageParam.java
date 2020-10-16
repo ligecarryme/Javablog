@@ -3,10 +3,16 @@ package com.darin.blog.dto;
 public class PageParam {
 
     private Integer current;
-    private Integer size;
-    private Integer total;
+    private Integer pages;
+    private Integer elements;
 
     public PageParam(){}
+
+    public PageParam(Integer current,Integer pages,Integer elements){
+        this.current = current;
+        this.pages = pages;
+        this.elements = elements;
+    }
 
     public Integer getCurrent() {
         return current;
@@ -16,19 +22,19 @@ public class PageParam {
         this.current = current;
     }
 
-    public Integer getSize() {
-        return size;
+    public Integer getPages() {
+        return pages;
     }
 
-    public void setSize(Integer size) {
-        this.size = size;
+    public void setPages(Integer pages) {
+        this.pages = pages;
     }
 
-    public Integer getTotal() {
-        return total;
+    public Integer getElements() {
+        return elements;
     }
 
-    public void setTotal(Integer total) {
-        this.total = total;
+    public void setElements(Integer elements) {
+        this.elements = elements;
     }
 }

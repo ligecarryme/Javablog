@@ -1,6 +1,7 @@
 package com.darin.blog.controller;
 
 import com.darin.blog.common.CommonResult;
+import com.darin.blog.dto.PageParam;
 import com.darin.blog.entity.Blog;
 import com.darin.blog.entity.Tag;
 import com.darin.blog.entity.Type;
@@ -15,14 +16,13 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Controller
+@RestController
 @Api(value = "indexController")
 public class IndexController {
 
@@ -37,14 +37,14 @@ public class IndexController {
 
     @ApiOperation("主页博客列表")
     @GetMapping("/")
-    @ResponseBody
     public CommonResult<Object> index(@RequestParam(value = "currentPage",defaultValue = "1") Integer currentPage){
         Pageable pageable = PageRequest.of(currentPage-1,6, Sort.Direction.ASC,"id");
         Page<Blog> page = blogService.listBlog(pageable);
         List<Type> typeList = typeService.listTypeTop(4);
         List<Tag> tagList = tagService.listTagTop(8);
         List<Blog> blogList = blogService.listBlogTop(3);
-        return CommonResult.success(ImmutableMap.of("blog",page.getContent(),"topBlog",blogList,"type",typeList,"tag",tagList) ,"获取成功");
+        PageParam pageParam = new PageParam(currentPage,page.getTotalPages(),(int) page.getTotalElements());
+        return CommonResult.success(ImmutableMap.of("totalpage",pageParam,"blog",page.getContent(),"topBlog",blogList,"type",typeList,"tag",tagList) ,"获取成功");
     }
 
 }

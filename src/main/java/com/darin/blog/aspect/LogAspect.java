@@ -1,5 +1,6 @@
 package com.darin.blog.aspect;
 
+import com.darin.blog.common.CommonResult;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
@@ -40,7 +41,11 @@ public class LogAspect {
     @AfterReturning(returning = "result", pointcut = "log()")
     public void doAfterReturn(Object result) throws Throwable{
         //logger.info("Result : {}", result.toString());
-        logger.info("Result");
+        if (result instanceof CommonResult){
+            logger.info("Result : Code:{}, Message:{}",((CommonResult) result).getCode(),((CommonResult) result).getMessage());
+        } else {
+            logger.info("Result ?");
+        }
     }
 
     private class RequestLog{
