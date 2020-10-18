@@ -1,0 +1,384 @@
+2020-10-16 09:34:35.851  INFO 41740 --- [restartedMain] com.darin.blog.BlogApplication           : Starting BlogApplication on LAPTOP-AAV7U5VL with PID 41740 (E:\Code\JavaProjects\myblog\target\classes started by admin in E:\Code\JavaProjects\myblog)
+2020-10-16 09:34:35.856 DEBUG 41740 --- [restartedMain] com.darin.blog.BlogApplication           : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 09:34:35.857  INFO 41740 --- [restartedMain] com.darin.blog.BlogApplication           : No active profile set, falling back to default profiles: default
+2020-10-16 09:34:35.907  INFO 41740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-16 09:34:35.908  INFO 41740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-16 09:34:36.902  INFO 41740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-16 09:34:36.997  INFO 41740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67ms. Found 4 JPA repository interfaces.
+2020-10-16 09:34:37.750  INFO 41740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8079 (http)
+2020-10-16 09:34:37.761  INFO 41740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 09:34:37.761  INFO 41740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-16 09:34:38.013  INFO 41740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 09:34:38.014  INFO 41740 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2106 ms
+2020-10-16 09:34:38.258  INFO 41740 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 09:34:38.371  INFO 41740 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-16 09:34:38.430  INFO 41740 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-16 09:34:38.587  INFO 41740 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-16 09:34:38.688  INFO 41740 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-16 09:34:38.703  WARN 41740 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-16 09:34:38.903  INFO 41740 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-16 09:34:39.076  INFO 41740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 09:34:39.304  INFO 41740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8079 (http) with context path ''
+2020-10-16 09:34:39.305  INFO 41740 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-16 09:34:39.324  INFO 41740 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-16 09:34:39.357  INFO 41740 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-16 09:34:39.519  INFO 41740 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-16 09:34:39.538  INFO 41740 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-16 09:34:39.548  INFO 41740 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingGET_1
+2020-10-16 09:34:39.554  INFO 41740 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: postUsingPOST_1
+2020-10-16 09:34:39.566  INFO 41740 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-16 09:34:40.168  INFO 41740 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-16 09:34:40.173  INFO 41740 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 09:34:40.696  INFO 41740 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-16 09:34:40.703  INFO 41740 --- [restartedMain] com.darin.blog.BlogApplication           : Started BlogApplication in 5.871 seconds (JVM running for 8.619)
+2020-10-16 09:34:54.582  INFO 41740 --- [http-nio-8079-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-16 09:34:54.583  INFO 41740 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-16 09:34:54.594  INFO 41740 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-10-16 09:34:54.633  INFO 41740 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 09:34:54.728  WARN 41740 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 09:34:54.739  WARN 41740 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 09:34:54.745  INFO 41740 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 09:39:22.652  INFO 41740 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 09:39:22.669  INFO 41740 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 09:39:36.631  INFO 41740 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 09:39:36.643  INFO 41740 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 09:44:35.887  INFO 41740 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 09:44:35.901  INFO 41740 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 09:45:34.018  INFO 41740 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 09:45:34.031  INFO 41740 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 09:46:18.655  INFO 41740 --- [http-nio-8079-exec-8] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 09:46:18.669  INFO 41740 --- [http-nio-8079-exec-8] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 09:58:16.649  INFO 41740 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 09:58:16.661  INFO 41740 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:25:38.227  INFO 41740 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:25:38.247  INFO 41740 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:25:44.379  INFO 41740 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:25:44.398  INFO 41740 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:27:03.697  INFO 41740 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:27:03.713  INFO 41740 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:29:38.871  INFO 41740 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:29:38.885  INFO 41740 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:31:08.753  INFO 41740 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:31:08.763  INFO 41740 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:31:17.821  INFO 41740 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:31:17.831  INFO 41740 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:31:45.062  INFO 41740 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:31:45.077  INFO 41740 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:33:03.274  INFO 41740 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:33:03.285  INFO 41740 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:33:43.378  INFO 41740 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:33:43.403  INFO 41740 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:36:54.280  INFO 41740 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:36:54.297  INFO 41740 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:37:33.182  INFO 41740 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:37:33.198  INFO 41740 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:38:02.176  INFO 41740 --- [http-nio-8079-exec-8] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:38:02.188  INFO 41740 --- [http-nio-8079-exec-8] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:38:05.106  INFO 41740 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:38:05.119  INFO 41740 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:46:15.172  INFO 41740 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:46:15.188  INFO 41740 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:50:18.336  INFO 41740 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:50:18.353  INFO 41740 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:50:35.425  INFO 41740 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:50:35.435  INFO 41740 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:50:51.182  INFO 41740 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:50:51.193  INFO 41740 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:51:47.739  INFO 41740 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:51:47.750  INFO 41740 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:51:57.322  INFO 41740 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:51:57.331  INFO 41740 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 10:59:09.913  INFO 41740 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 10:59:09.927  INFO 41740 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 11:02:47.781  INFO 41740 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 11:02:47.790  INFO 41740 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 11:02:56.032  INFO 41740 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 11:02:56.043  INFO 41740 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 11:15:13.218  INFO 33304 --- [restartedMain] com.darin.blog.BlogApplication           : Starting BlogApplication on LAPTOP-AAV7U5VL with PID 33304 (E:\Code\JavaProjects\myblog\target\classes started by admin in E:\Code\JavaProjects\myblog)
+2020-10-16 11:15:13.222 DEBUG 33304 --- [restartedMain] com.darin.blog.BlogApplication           : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 11:15:13.222  INFO 33304 --- [restartedMain] com.darin.blog.BlogApplication           : No active profile set, falling back to default profiles: default
+2020-10-16 11:15:13.260  INFO 33304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-16 11:15:13.261  INFO 33304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-16 11:15:13.893  INFO 33304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-16 11:15:13.953  INFO 33304 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 4 JPA repository interfaces.
+2020-10-16 11:15:14.517  INFO 33304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8079 (http)
+2020-10-16 11:15:14.523  INFO 33304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 11:15:14.523  INFO 33304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-16 11:15:14.627  INFO 33304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 11:15:14.628  INFO 33304 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1367 ms
+2020-10-16 11:15:14.768  INFO 33304 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 11:15:14.838  INFO 33304 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-16 11:15:14.868  INFO 33304 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-16 11:15:14.959  INFO 33304 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-16 11:15:15.030  INFO 33304 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-16 11:15:15.079  WARN 33304 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-16 11:15:15.230  INFO 33304 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-16 11:15:15.423  INFO 33304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 11:15:15.630  INFO 33304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8079 (http) with context path ''
+2020-10-16 11:15:15.631  INFO 33304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-16 11:15:15.644  INFO 33304 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-16 11:15:15.669  INFO 33304 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-16 11:15:15.738  INFO 33304 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-16 11:15:15.751  INFO 33304 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-16 11:15:15.830  INFO 33304 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingGET_1
+2020-10-16 11:15:15.836  INFO 33304 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: postUsingPOST_1
+2020-10-16 11:15:15.848  INFO 33304 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-16 11:15:16.279  INFO 33304 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-16 11:15:16.284  INFO 33304 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 11:15:16.773  INFO 33304 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-16 11:15:16.781  INFO 33304 --- [restartedMain] com.darin.blog.BlogApplication           : Started BlogApplication in 3.967 seconds (JVM running for 5.233)
+2020-10-16 11:20:44.418  INFO 33304 --- [http-nio-8079-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-16 11:20:44.419  INFO 33304 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-16 11:20:44.432  INFO 33304 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-10-16 11:20:44.483  INFO 33304 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 11:20:44.605  WARN 33304 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 11:20:44.621  WARN 33304 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 11:20:44.632  INFO 33304 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 12:29:27.253  INFO 10008 --- [restartedMain] com.darin.blog.BlogApplication           : Starting BlogApplication on LAPTOP-AAV7U5VL with PID 10008 (E:\Code\JavaProjects\myblog\target\classes started by admin in E:\Code\JavaProjects\myblog)
+2020-10-16 12:29:27.256 DEBUG 10008 --- [restartedMain] com.darin.blog.BlogApplication           : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 12:29:27.257  INFO 10008 --- [restartedMain] com.darin.blog.BlogApplication           : No active profile set, falling back to default profiles: default
+2020-10-16 12:29:27.294  INFO 10008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-16 12:29:27.294  INFO 10008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-16 12:29:27.887  INFO 10008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-16 12:29:27.936  INFO 10008 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 4 JPA repository interfaces.
+2020-10-16 12:29:28.459  INFO 10008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8079 (http)
+2020-10-16 12:29:28.466  INFO 10008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 12:29:28.466  INFO 10008 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-16 12:29:28.566  INFO 10008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 12:29:28.566  INFO 10008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1272 ms
+2020-10-16 12:29:28.696  INFO 10008 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 12:29:28.768  INFO 10008 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-16 12:29:28.799  INFO 10008 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-16 12:29:28.888  INFO 10008 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-16 12:29:28.951  INFO 10008 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-16 12:29:28.994  WARN 10008 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-16 12:29:29.138  INFO 10008 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-16 12:29:29.307  INFO 10008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 12:29:29.489  INFO 10008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8079 (http) with context path ''
+2020-10-16 12:29:29.490  INFO 10008 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-16 12:29:29.501  INFO 10008 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-16 12:29:29.523  INFO 10008 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-16 12:29:29.622  INFO 10008 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-16 12:29:29.635  INFO 10008 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-16 12:29:29.667  INFO 10008 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingGET_1
+2020-10-16 12:29:29.672  INFO 10008 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: postUsingPOST_1
+2020-10-16 12:29:29.680  INFO 10008 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-16 12:29:30.170  INFO 10008 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-16 12:29:30.176  INFO 10008 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 12:29:30.726  INFO 10008 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-16 12:29:30.732  INFO 10008 --- [restartedMain] com.darin.blog.BlogApplication           : Started BlogApplication in 3.852 seconds (JVM running for 5.084)
+2020-10-16 12:29:49.461  INFO 10008 --- [http-nio-8079-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-16 12:29:49.461  INFO 10008 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-16 12:29:49.482  INFO 10008 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-10-16 12:29:49.525  INFO 10008 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 12:29:49.640  WARN 10008 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 12:29:49.653  WARN 10008 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 12:29:49.661  INFO 10008 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 13:38:06.802  INFO 27584 --- [restartedMain] com.darin.blog.BlogApplication           : Starting BlogApplication on LAPTOP-AAV7U5VL with PID 27584 (E:\Code\JavaProjects\myblog\target\classes started by admin in E:\Code\JavaProjects\myblog)
+2020-10-16 13:38:06.805 DEBUG 27584 --- [restartedMain] com.darin.blog.BlogApplication           : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 13:38:06.806  INFO 27584 --- [restartedMain] com.darin.blog.BlogApplication           : No active profile set, falling back to default profiles: default
+2020-10-16 13:38:06.852  INFO 27584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-16 13:38:06.853  INFO 27584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-16 13:38:07.539  INFO 27584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-16 13:38:07.588  INFO 27584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 4 JPA repository interfaces.
+2020-10-16 13:38:08.156  INFO 27584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8079 (http)
+2020-10-16 13:38:08.163  INFO 27584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 13:38:08.163  INFO 27584 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-16 13:38:08.268  INFO 27584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 13:38:08.268  INFO 27584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1415 ms
+2020-10-16 13:38:08.402  INFO 27584 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 13:38:08.475  INFO 27584 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-16 13:38:08.505  INFO 27584 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-16 13:38:08.599  INFO 27584 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-16 13:38:08.663  INFO 27584 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-16 13:38:08.705  WARN 27584 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-16 13:38:08.852  INFO 27584 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-16 13:38:09.059  INFO 27584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 13:38:09.267  INFO 27584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8079 (http) with context path ''
+2020-10-16 13:38:09.268  INFO 27584 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-16 13:38:09.283  INFO 27584 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-16 13:38:09.308  INFO 27584 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-16 13:38:09.373  INFO 27584 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-16 13:38:09.386  INFO 27584 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-16 13:38:09.467  INFO 27584 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingGET_1
+2020-10-16 13:38:09.479  INFO 27584 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: postUsingPOST_1
+2020-10-16 13:38:09.491  INFO 27584 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-16 13:38:09.942  INFO 27584 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-16 13:38:09.948  INFO 27584 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 13:38:10.463  INFO 27584 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-16 13:38:10.469  INFO 27584 --- [restartedMain] com.darin.blog.BlogApplication           : Started BlogApplication in 4.055 seconds (JVM running for 5.23)
+2020-10-16 13:42:26.465  INFO 27584 --- [http-nio-8079-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-16 13:42:26.465  INFO 27584 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-16 13:42:26.478  INFO 27584 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-10-16 13:42:26.518  INFO 27584 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 13:42:26.664  WARN 27584 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 13:42:26.681  WARN 27584 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 13:42:26.691  INFO 27584 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 13:58:40.907  INFO 1372 --- [restartedMain] com.darin.blog.BlogApplication           : Starting BlogApplication on LAPTOP-AAV7U5VL with PID 1372 (E:\Code\JavaProjects\myblog\target\classes started by admin in E:\Code\JavaProjects\myblog)
+2020-10-16 13:58:40.909 DEBUG 1372 --- [restartedMain] com.darin.blog.BlogApplication           : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 13:58:40.910  INFO 1372 --- [restartedMain] com.darin.blog.BlogApplication           : No active profile set, falling back to default profiles: default
+2020-10-16 13:58:40.959  INFO 1372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-16 13:58:40.960  INFO 1372 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-16 13:58:41.558  INFO 1372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-16 13:58:41.608  INFO 1372 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 4 JPA repository interfaces.
+2020-10-16 13:58:42.160  INFO 1372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8079 (http)
+2020-10-16 13:58:42.166  INFO 1372 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 13:58:42.166  INFO 1372 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-16 13:58:42.272  INFO 1372 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 13:58:42.272  INFO 1372 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1312 ms
+2020-10-16 13:58:42.408  INFO 1372 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 13:58:42.478  INFO 1372 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-16 13:58:42.507  INFO 1372 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-16 13:58:42.594  INFO 1372 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-16 13:58:42.659  INFO 1372 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-16 13:58:42.705  WARN 1372 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-16 13:58:42.849  INFO 1372 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-16 13:58:43.026  INFO 1372 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 13:58:43.221  INFO 1372 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8079 (http) with context path ''
+2020-10-16 13:58:43.222  INFO 1372 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-16 13:58:43.236  INFO 1372 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-16 13:58:43.259  INFO 1372 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-16 13:58:43.323  INFO 1372 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-16 13:58:43.335  INFO 1372 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-16 13:58:43.414  INFO 1372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingGET_1
+2020-10-16 13:58:43.419  INFO 1372 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: postUsingPOST_1
+2020-10-16 13:58:43.430  INFO 1372 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-16 13:58:43.919  INFO 1372 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-16 13:58:43.925  INFO 1372 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 13:58:44.410  INFO 1372 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-16 13:58:44.415  INFO 1372 --- [restartedMain] com.darin.blog.BlogApplication           : Started BlogApplication in 3.987 seconds (JVM running for 5.216)
+2020-10-16 13:58:49.399  INFO 1372 --- [http-nio-8079-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-16 13:58:49.399  INFO 1372 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-16 13:58:49.409  INFO 1372 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-10-16 13:58:49.447  INFO 1372 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 13:58:49.556  WARN 1372 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 13:58:49.567  WARN 1372 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 13:58:49.574  INFO 1372 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:00:15.231  INFO 34120 --- [restartedMain] com.darin.blog.BlogApplication           : Starting BlogApplication on LAPTOP-AAV7U5VL with PID 34120 (E:\Code\JavaProjects\myblog\target\classes started by admin in E:\Code\JavaProjects\myblog)
+2020-10-16 14:00:15.233 DEBUG 34120 --- [restartedMain] com.darin.blog.BlogApplication           : Running with Spring Boot v2.3.4.RELEASE, Spring v5.2.9.RELEASE
+2020-10-16 14:00:15.233  INFO 34120 --- [restartedMain] com.darin.blog.BlogApplication           : No active profile set, falling back to default profiles: default
+2020-10-16 14:00:15.269  INFO 34120 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-16 14:00:15.269  INFO 34120 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-16 14:00:15.905  INFO 34120 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-16 14:00:15.958  INFO 34120 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 4 JPA repository interfaces.
+2020-10-16 14:00:16.510  INFO 34120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8079 (http)
+2020-10-16 14:00:16.517  INFO 34120 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-16 14:00:16.517  INFO 34120 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-16 14:00:16.620  INFO 34120 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-16 14:00:16.620  INFO 34120 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1351 ms
+2020-10-16 14:00:16.760  INFO 34120 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-16 14:00:16.829  INFO 34120 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-16 14:00:16.859  INFO 34120 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-16 14:00:16.966  INFO 34120 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-16 14:00:17.031  INFO 34120 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-16 14:00:17.080  WARN 34120 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-16 14:00:17.252  INFO 34120 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-10-16 14:00:17.422  INFO 34120 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-16 14:00:17.623  INFO 34120 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8079 (http) with context path ''
+2020-10-16 14:00:17.625  INFO 34120 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-10-16 14:00:17.638  INFO 34120 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-10-16 14:00:17.662  INFO 34120 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-10-16 14:00:17.752  INFO 34120 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-16 14:00:17.765  INFO 34120 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-10-16 14:00:17.815  INFO 34120 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingGET_1
+2020-10-16 14:00:17.820  INFO 34120 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: postUsingPOST_1
+2020-10-16 14:00:17.829  INFO 34120 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-16 14:00:18.246  INFO 34120 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-16 14:00:18.253  INFO 34120 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-16 14:00:18.749  INFO 34120 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-16 14:00:18.755  INFO 34120 --- [restartedMain] com.darin.blog.BlogApplication           : Started BlogApplication in 3.945 seconds (JVM running for 5.35)
+2020-10-16 14:00:23.702  INFO 34120 --- [http-nio-8079-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-16 14:00:23.702  INFO 34120 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-16 14:00:23.711  INFO 34120 --- [http-nio-8079-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2020-10-16 14:00:23.750  INFO 34120 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:00:23.869  WARN 34120 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 14:00:23.885  WARN 34120 --- [http-nio-8079-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2020-10-16 14:00:23.893  INFO 34120 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:05:08.224  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:05:08.238  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:13:37.691  INFO 34120 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:13:37.704  INFO 34120 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:13:42.314  INFO 34120 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:13:42.327  INFO 34120 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:14:15.752  INFO 34120 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:14:15.767  INFO 34120 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:18:49.003  INFO 34120 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:18:49.016  INFO 34120 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:19:15.400  INFO 34120 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:19:15.414  INFO 34120 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:21:09.347  INFO 34120 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:21:09.359  INFO 34120 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:21:57.534  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:21:57.548  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:23:25.569  INFO 34120 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:23:25.584  INFO 34120 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:28:33.120  INFO 34120 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:28:33.137  INFO 34120 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:49:24.629  INFO 34120 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:49:24.643  INFO 34120 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:51:40.905  INFO 34120 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:51:40.915  INFO 34120 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:52:14.024  INFO 34120 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:52:14.036  INFO 34120 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:52:49.249  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:52:49.262  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 14:52:56.835  INFO 34120 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 14:52:56.849  INFO 34120 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 15:09:37.855  INFO 34120 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 15:09:37.870  INFO 34120 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 15:13:48.427  INFO 34120 --- [http-nio-8079-exec-8] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 15:13:48.441  INFO 34120 --- [http-nio-8079-exec-8] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 15:18:50.476  INFO 34120 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 15:18:50.489  INFO 34120 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 15:19:33.238  INFO 34120 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 15:19:33.249  INFO 34120 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 15:20:10.237  INFO 34120 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 15:20:10.256  INFO 34120 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 15:24:38.853  INFO 34120 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 15:24:38.870  INFO 34120 --- [http-nio-8079-exec-6] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 15:29:26.321  INFO 34120 --- [http-nio-8079-exec-8] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 15:29:26.332  INFO 34120 --- [http-nio-8079-exec-8] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 15:52:28.534  INFO 34120 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 15:52:28.550  INFO 34120 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 15:52:49.488  INFO 34120 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 15:52:49.503  INFO 34120 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 15:55:53.176  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 15:55:53.187  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 15:59:40.846  INFO 34120 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 15:59:40.857  INFO 34120 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:01:46.300  INFO 34120 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:01:46.312  INFO 34120 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:03:23.038  INFO 34120 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:03:23.050  INFO 34120 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:03:45.139  INFO 34120 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:03:45.150  INFO 34120 --- [http-nio-8079-exec-10] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:13:33.753  INFO 34120 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:13:33.761  INFO 34120 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:14:24.433  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:14:24.442  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:14:53.867  INFO 34120 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:14:53.877  INFO 34120 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:15:28.855  INFO 34120 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:15:28.862  INFO 34120 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:17:25.094  INFO 34120 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:17:25.107  INFO 34120 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:19:51.345  INFO 34120 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:19:51.355  INFO 34120 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:26:24.666  INFO 34120 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:26:24.677  INFO 34120 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:54:48.127  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:54:48.138  INFO 34120 --- [http-nio-8079-exec-3] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 16:59:02.667  INFO 34120 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 16:59:02.682  INFO 34120 --- [http-nio-8079-exec-5] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 17:21:20.453  INFO 34120 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 17:21:20.463  INFO 34120 --- [http-nio-8079-exec-7] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 17:22:20.117  INFO 34120 --- [http-nio-8079-exec-8] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 17:22:20.130  INFO 34120 --- [http-nio-8079-exec-8] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 17:22:27.077  INFO 34120 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 17:22:27.090  INFO 34120 --- [http-nio-8079-exec-9] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 17:23:56.187  INFO 34120 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 17:23:56.202  INFO 34120 --- [http-nio-8079-exec-1] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 17:24:15.380  INFO 34120 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 17:24:15.391  INFO 34120 --- [http-nio-8079-exec-2] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功
+2020-10-16 17:29:49.008  INFO 34120 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8079/', ip='0:0:0:0:0:0:0:1', classMethod='com.darin.blog.controller.IndexController.index', args=[1]}
+2020-10-16 17:29:49.021  INFO 34120 --- [http-nio-8079-exec-4] com.darin.blog.aspect.LogAspect          : Result : Code:200, Message:获取成功

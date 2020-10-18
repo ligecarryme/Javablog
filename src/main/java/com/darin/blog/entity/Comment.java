@@ -1,5 +1,7 @@
 package com.darin.blog.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Date;
@@ -67,10 +69,12 @@ public class Comment {
         this.createTime = createTime;
     }
 
+    @JsonBackReference
     public Blog getBlog() {
         return blog;
     }
 
+    @JsonBackReference
     public void setBlog(Blog blog) {
         this.blog = blog;
     }

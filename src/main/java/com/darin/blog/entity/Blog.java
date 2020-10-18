@@ -189,10 +189,12 @@ public class Blog {
         this.user = user;
     }
 
+    @JsonManagedReference
     public List<Comment> getComments() {
         return comments;
     }
 
+    @JsonManagedReference
     public void setComments(List<Comment> comments) {
         this.comments = comments;
     }

@@ -16,9 +16,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -44,7 +42,23 @@ public class IndexController {
         List<Tag> tagList = tagService.listTagTop(8);
         List<Blog> blogList = blogService.listBlogTop(3);
         PageParam pageParam = new PageParam(currentPage,page.getTotalPages(),(int) page.getTotalElements());
-        return CommonResult.success(ImmutableMap.of("totalpage",pageParam,"blog",page.getContent(),"topBlog",blogList,"type",typeList,"tag",tagList) ,"获取成功");
+        return CommonResult.success(ImmutableMap.of("pageinfo",pageParam,"blog",page.getContent(),"topBlog",blogList,"type",typeList,"tag",tagList) ,"获取成功");
     }
+
+    @ApiOperation("搜索博客")
+    @PostMapping("/search")
+    public CommonResult<Page> search(@RequestParam(value = "currentPage",defaultValue = "1") Integer currentPage, String query){
+        Pageable pageable = PageRequest.of(currentPage-1,6, Sort.Direction.ASC,"id");
+        Page<Blog> blogsearch = blogService.listBlog(pageable,"%"+query+"%");
+        return CommonResult.success(blogsearch,"搜索成功");
+    }
+
+    @ApiOperation("博客详情")
+    @GetMapping("/blogDetail/{id}")
+    public CommonResult<Object> detail(@PathVariable Long id){
+        Blog blog = blogService.getBlog(id);
+        return CommonResult.success(blog,"博客详情获取成功");
+    }
+
 
 }

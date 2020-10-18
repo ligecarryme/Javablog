@@ -6,6 +6,8 @@ import com.darin.blog.dto.SearchBlogParam;
 import com.darin.blog.entity.Blog;
 import com.darin.blog.entity.Type;
 import com.darin.blog.service.BlogService;
+import com.darin.blog.utils.MarkdownUtils;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -29,13 +31,27 @@ public class BlogServiceImpl implements BlogService {
     @Transactional
     @Override
     public Blog getBlog(Long id) {
-        return blogRepository.getOne(id);
+        Blog blog =  blogRepository.findById(id).get();
+        if (blog == null){
+            throw new NotFoundException("博客不存在");
+        }
+        return blog;
+//        Blog b = new Blog();
+//        BeanUtils.copyProperties(blog,b);
+//        String content = b.getContent();
+//        b.setContent(MarkdownUtils.markdownToHtmlExtensions(content));
+//        return b;
     }
 
     @Transactional
     @Override
     public Page<Blog> listBlog(Pageable pageable) {
         return blogRepository.findAll(pageable);
+    }
+
+    @Override
+    public Page<Blog> listBlog(Pageable pageable, String query) {
+        return blogRepository.findByQuery(query,pageable);
     }
 
     @Override
