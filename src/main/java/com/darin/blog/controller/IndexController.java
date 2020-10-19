@@ -47,7 +47,7 @@ public class IndexController {
 
     @ApiOperation("搜索博客")
     @PostMapping("/search")
-    public CommonResult<Page> search(@RequestParam(value = "currentPage",defaultValue = "1") Integer currentPage, String query){
+    public CommonResult<Page> search(@RequestParam(value = "currentPage",defaultValue = "1") Integer currentPage, @RequestParam String query){
         Pageable pageable = PageRequest.of(currentPage-1,6, Sort.Direction.ASC,"id");
         Page<Blog> blogsearch = blogService.listBlog(pageable,"%"+query+"%");
         return CommonResult.success(blogsearch,"搜索成功");
