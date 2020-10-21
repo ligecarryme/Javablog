@@ -31,4 +31,13 @@ public class SearchBlogParam {
     public void setRecommend(boolean recommend) {
         this.recommend = recommend;
     }
+
+    @Override
+    public String toString() {
+        return "SearchBlogParam{" +
+                "title='" + title + '\'' +
+                ", typeid=" + typeid +
+                ", recommend=" + recommend +
+                '}';
+    }
 }

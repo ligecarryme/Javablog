@@ -6,8 +6,6 @@ import com.darin.blog.dto.SearchBlogParam;
 import com.darin.blog.entity.Blog;
 import com.darin.blog.entity.Type;
 import com.darin.blog.service.BlogService;
-import com.darin.blog.utils.MarkdownUtils;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -17,7 +15,7 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -49,11 +47,13 @@ public class BlogServiceImpl implements BlogService {
         return blogRepository.findAll(pageable);
     }
 
+    @Transactional
     @Override
     public Page<Blog> listBlog(Pageable pageable, String query) {
         return blogRepository.findByQuery(query,pageable);
     }
 
+    @Transactional
     @Override
     public List<Blog> listBlogTop(Integer size) {
         Sort sort = Sort.by(Sort.Direction.DESC,"updateTime");
@@ -78,6 +78,29 @@ public class BlogServiceImpl implements BlogService {
             }
             cq.where(predicates.toArray(new Predicate[predicates.size()]));
             return null;
+        },pageable);
+    }
+
+    @Transactional
+    @Override
+    public Page<Blog> listBlogByTypeId(Pageable pageable, Long id) {
+        return blogRepository.findAll((Specification<Blog>) (root, cq, cb) -> {
+            List<Predicate> predicates = new ArrayList<>();
+            predicates.add(cb.equal(root.<Type>get("type").get("id"), id));
+            cq.where(predicates.toArray(new Predicate[predicates.size()]));
+            return null;
+        },pageable);
+    }
+
+    @Transactional
+    @Override
+    public Page<Blog> listBlogByTagId(Pageable pageable, Long tagid) {
+        return blogRepository.findAll(new Specification<Blog>() {
+            @Override
+            public Predicate toPredicate(Root<Blog> root, CriteriaQuery<?> criteriaQuery, CriteriaBuilder criteriaBuilder) {
+                Join join = root.join("tags");
+                return criteriaBuilder.equal(join.get("id"),tagid);
+            }
         },pageable);
     }
 
