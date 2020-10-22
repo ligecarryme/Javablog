@@ -16,9 +16,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.criteria.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Service
 public class BlogServiceImpl implements BlogService {
@@ -106,8 +104,25 @@ public class BlogServiceImpl implements BlogService {
 
     @Transactional
     @Override
+    public Map<String, List<Blog>> archiveBlog() {
+        List<String> months = blogRepository.findGroupByMonth();
+        Map<String ,List<Blog>> map = new HashMap<>();
+        for (String month: months){
+            map.put(month,blogRepository.findByMonth(month));
+        }
+        return map;
+    }
+
+    @Transactional
+    @Override
+    public Long countBlog() {
+        return blogRepository.count();
+    }
+
+    @Transactional
+    @Override
     public Blog saveBlog(Blog blog) {
-        if (blog.getId() == null) {
+        if (blog.getId() == 0) {
             blog.setCreateTime(new Date());
             blog.setUpdateTime(new Date());
             blog.setViews(0);
@@ -120,7 +135,7 @@ public class BlogServiceImpl implements BlogService {
     @Transactional
     @Override
     public Blog updateBlog(Long id, Blog blog) {
-        Blog b = blogRepository.getOne(id);
+        Blog b = blogRepository.findById(id).get();
         if (b == null){
             throw new NotFoundException("博客类型不存在");
         }
