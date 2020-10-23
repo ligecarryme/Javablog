@@ -13,6 +13,7 @@ import com.darin.blog.service.TypeService;
 import com.darin.blog.service.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -78,21 +79,10 @@ public class BlogController {
     public CommonResult<Object> post(@RequestBody BlogParam blogParam){
         Blog blog = new Blog();
 
+        BeanUtils.copyProperties(blogParam,blog);
         blog.setUser(userService.getUser(blogParam.getUsername()));
-        blog.setId(blogParam.getId());
-        blog.setFlag(blogParam.getFlag());
-        blog.setTitle(blogParam.getTitle());
         blog.setType(typeService.getType(blogParam.getTypeid()));
         blog.setTags(tagService.listTag(blogParam.getTagsid()));
-        blog.setFirstPicture(blogParam.getFirstPicture());
-        blog.setContent(blogParam.getContent());
-        blog.setRecommend(blogParam.isRecommend());
-        blog.setShareStatement(blogParam.isShareStatement());
-        blog.setAppreciation(blogParam.isAppreciation());
-        blog.setCommentabled(blogParam.isCommentabled());
-        blog.setPublished(blogParam.isPublished());
-        blog.setDescription(blogParam.getDescription());
-//        System.out.println(blog);
 
         if (blog.getId() == 0){
             blogService.saveBlog(blog);

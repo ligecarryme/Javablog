@@ -1,6 +1,7 @@
 package com.darin.blog.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -17,7 +18,9 @@ public class Comment {
     private String nickname;
     private String content;
     private String avatar;
+
     @Temporal(TemporalType.TIMESTAMP)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date createTime;
 
     @ManyToOne

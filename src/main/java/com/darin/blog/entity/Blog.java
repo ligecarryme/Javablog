@@ -1,6 +1,7 @@
 package com.darin.blog.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
@@ -23,6 +24,9 @@ public class Blog {
     private String firstPicture;
     private String flag; //标签
     private Integer views;
+
+    @Basic(fetch = FetchType.LAZY)
+    @Lob
     private String description;
     private boolean appreciation;
     private boolean shareStatement;

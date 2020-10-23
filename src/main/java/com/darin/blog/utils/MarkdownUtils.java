@@ -75,7 +75,7 @@ public class MarkdownUtils {
                 "| 测试测试  | 测试测试  | 测试    |\n" +
                 "| 测试测  | 测试测试 | 测试测试测试 |\n" +
                 "\n";
-        String a = "[imCoding](http://www.darin.cn)";
+        String a = "[](http://www.darin.cn)";
         System.out.println(markdownToHtml(table));
     }
 }
