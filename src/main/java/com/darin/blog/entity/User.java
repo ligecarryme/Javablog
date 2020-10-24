@@ -1,6 +1,7 @@
 package com.darin.blog.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -16,7 +17,9 @@ public class User {
     private Long id;
     private String nickname;
     private String username;
+    @JsonIgnore
     private String password;
+    @JsonIgnore
     private String email;
     private String avatar;
     private Integer type;

@@ -1,5 +1,6 @@
 package com.darin.blog.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.darin.blog.common.CommonResult;
 import com.darin.blog.entity.Blog;
 import com.darin.blog.entity.Type;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @Api(value = "TypeShowController")
@@ -39,6 +41,8 @@ public class TypeShowController {
         }
         Pageable pageable = PageRequest.of(current-1,6, Sort.Direction.ASC,"updateTime");
         Page<Blog> page = blogService.listBlogByTypeId(pageable,id);
+//        String  jsonObject = JSONObject.toJSONString(page);
+//        System.out.println(jsonObject);
         return CommonResult.success(ImmutableMap.of("types",types,"blogs",page));
     }
 
